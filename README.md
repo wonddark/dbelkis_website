@@ -1,5 +1,5 @@
 # D'Belkis Website
-Website for D'Belkis, a cleaning company.
+Website for D'Belkis, a cleaning company in Dubai.
 
 ## Tech Stack
 - React
