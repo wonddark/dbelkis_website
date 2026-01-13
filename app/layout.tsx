@@ -70,7 +70,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${sansation.variable} antialiased font-body`}
+        className={`${inter.variable} ${sansation.variable} font-body antialiased`}
       >
         {children}
       </body>
