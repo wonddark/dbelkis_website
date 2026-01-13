@@ -5,7 +5,7 @@ import Link from "next/dist/client/link";
 function HeroSection() {
   return (
     <section className="bg-[url(/images/hero.jpg)] bg-cover bg-center">
-      <div className="flex flex-col gap-14 px-4 py-4">
+      <div className="flex flex-col gap-14 bg-white/40 px-4 py-4">
         <header className="mb-16 flex items-center justify-center">
           <Image
             src="/images/dbelkis-logo.jpeg"
