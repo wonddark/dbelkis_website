@@ -32,13 +32,13 @@ function HeroSection() {
           <div className="5 flex flex-col gap-1">
             <Link
               href="/"
-              className="rounded-full bg-primary px-6 py-3 text-center text-[13px] font-medium text-primary-contrast"
+              className="rounded-full bg-primary px-6 py-3 text-center text-sm font-medium text-primary-contrast"
             >
               Get a Free Quote
             </Link>
             <Link
               href="/"
-              className="font-medium] rounded-full border border-primary px-6 py-3 text-center text-[13px] text-primary"
+              className="rounded-full border border-primary px-6 py-3 text-center text-sm font-medium text-primary"
             >
               Book a Cleaning
             </Link>
