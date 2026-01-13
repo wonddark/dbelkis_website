@@ -8,11 +8,13 @@ import { faPumpMedical } from "@fortawesome/free-solid-svg-icons/faPumpMedical";
 import { faDoorOpen } from "@fortawesome/free-solid-svg-icons/faDoorOpen";
 import { faBugSlash } from "@fortawesome/free-solid-svg-icons/faBugSlash";
 import { faShuttleVan } from "@fortawesome/free-solid-svg-icons/faShuttleVan";
+import SectionTitle from "@/components/SectionTitle";
+import SectionContainer from "@/components/SectionContainer";
 
 function ServicesSection() {
   return (
-    <section className="flex flex-col gap-8 p-4">
-      <h3 className="text-center text-[20px] font-light">Our Services</h3>
+    <SectionContainer>
+      <SectionTitle title="Our Services" />
       <div className="grid grid-cols-2 gap-4">
         <div className="flex flex-col items-center gap-6 rounded-2xl bg-paper px-3 py-4 shadow-[0_2px_4px_0_rgb(107_114_128/.1)]">
           <FontAwesomeIcon
@@ -48,7 +50,7 @@ function ServicesSection() {
           <p className="text-center text-[14px]">Move-In / Move-Out Cleaning</p>
         </div>
       </div>
-    </section>
+    </SectionContainer>
   );
 }
 
