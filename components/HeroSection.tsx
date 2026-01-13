@@ -19,7 +19,7 @@ function HeroSection() {
           <div className="rounded-full border border-accent bg-paper px-2 py-1 text-[10px] text-body2">
             5<span className="text-accent">★</span> Rated Cleaning Service
           </div>
-          <h1 className="text-center text-[36px]">
+          <h1 className="text-center font-display text-[36px]">
             Professional Cleaning Services{" "}
             <span className="text-accent">You Can Trust</span>
           </h1>
