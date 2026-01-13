@@ -5,11 +5,13 @@ import "./globals.css";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  preload: true,
 });
 
 const sansation = Sansation({
   variable: "--font-sansation",
   weight: "700",
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -69,9 +71,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} ${sansation.variable} font-body antialiased`}
-      >
+      <body className={`${inter.variable} ${sansation.variable} antialiased`}>
         {children}
       </body>
     </html>
