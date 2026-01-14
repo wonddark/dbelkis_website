@@ -82,8 +82,8 @@ function FaqSection() {
   return (
     <SectionContainer>
       <SectionTitle title="Frequently Asked Questions" />
-      <div className="flex md:gap-8">
-        <div className="flex flex-auto flex-col gap-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 lg:gap-16">
+        <div className="flex flex-col gap-3 lg:px-12">
           {faqs.map((faq) => (
             <div key={faq.id} className="flex flex-col gap-1">
               <input
@@ -96,11 +96,11 @@ function FaqSection() {
               />
               <label
                 htmlFor={`check-${faq.id}`}
-                className="text-xs font-medium text-body2 md:text-sm"
+                className="text-xs font-medium text-body2 md:text-sm lg:text-base"
               >
                 {faq.question}
               </label>
-              <p className="hidden text-xs font-light text-body2 peer-checked:block md:text-sm">
+              <p className="hidden text-xs font-light text-body2 peer-checked:block md:text-sm lg:text-base">
                 {faq.answer}
               </p>
             </div>
@@ -111,7 +111,7 @@ function FaqSection() {
           alt="D'Belkis Cleaning Servives"
           width={640}
           height={427}
-          className="hidden max-w-88 rounded-xl object-cover md:block"
+          className="hidden h-full w-full rounded-xl object-cover md:block"
         />
       </div>
     </SectionContainer>
