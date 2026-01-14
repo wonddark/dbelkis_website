@@ -54,15 +54,17 @@ function ReviewsSection() {
         {reviews.map((review) => (
           <Card key={review.id}>
             <div className="flex flex-col items-center gap-1">
-              <div className="5 flex flex-col items-center gap-0">
-                <div className="size-6 rounded-full bg-green-600" />
-                <span className="text-[10px] text-body2">
+              <div className="flex flex-col items-center gap-0.5">
+                <div className="size-6 rounded-full bg-green-600 md:size-7" />
+                <span className="text-[10px] text-body2 md:text-xs">
                   {review.author} - {review.date}
                 </span>
               </div>
-              <span className="text-xs text-accent">★★★★★</span>
+              <span className="text-xs text-accent md:text-sm">★★★★★</span>
             </div>
-            <p className="line-clamp-4 text-[13px] italic">{review.content}</p>
+            <p className="line-clamp-4 text-[13px] italic md:text-sm">
+              {review.content}
+            </p>
           </Card>
         ))}
       </div>
