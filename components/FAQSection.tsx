@@ -1,6 +1,7 @@
 import React from "react";
 import SectionContainer from "@/components/SectionContainer";
 import SectionTitle from "@/components/SectionTitle";
+import Image from "next/image";
 
 const faqs = [
   {
@@ -81,28 +82,37 @@ function FaqSection() {
   return (
     <SectionContainer>
       <SectionTitle title="Frequently Asked Questions" />
-      <div className="flex flex-col gap-3">
-        {faqs.map((faq) => (
-          <div key={faq.id} className="flex flex-col gap-1">
-            <input
-              type="radio"
-              name="faq"
-              id={`check-${faq.id}`}
-              hidden
-              defaultChecked={faq.id === 1}
-              className="peer"
-            />
-            <label
-              htmlFor={`check-${faq.id}`}
-              className="text-xs font-medium text-body2"
-            >
-              {faq.question}
-            </label>
-            <p className="hidden text-xs font-light text-body2 peer-checked:block">
-              {faq.answer}
-            </p>
-          </div>
-        ))}
+      <div className="flex md:gap-8">
+        <div className="flex flex-auto flex-col gap-3">
+          {faqs.map((faq) => (
+            <div key={faq.id} className="flex flex-col gap-1">
+              <input
+                type="radio"
+                name="faq"
+                id={`check-${faq.id}`}
+                hidden
+                defaultChecked={faq.id === 1}
+                className="peer"
+              />
+              <label
+                htmlFor={`check-${faq.id}`}
+                className="text-xs font-medium text-body2 md:text-sm"
+              >
+                {faq.question}
+              </label>
+              <p className="hidden text-xs font-light text-body2 peer-checked:block md:text-sm">
+                {faq.answer}
+              </p>
+            </div>
+          ))}
+        </div>
+        <Image
+          src="/images/faq.jpg"
+          alt="D'Belkis Cleaning Servives"
+          width={640}
+          height={427}
+          className="hidden max-w-88 rounded-xl object-cover md:block"
+        />
       </div>
     </SectionContainer>
   );
