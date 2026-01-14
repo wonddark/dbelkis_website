@@ -7,7 +7,7 @@ import FooterSection from "@/components/FooterSection";
 
 export default function Home() {
   return (
-    <main>
+    <main className="mx-auto w-full max-w-360">
       <HeroSection />
       <ServicesSection />
       <ReviewsSection />

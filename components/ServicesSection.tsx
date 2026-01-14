@@ -13,9 +13,9 @@ import ServiceCard from "@/components/ServiceCard";
 
 function ServicesSection() {
   return (
-    <SectionContainer>
+    <SectionContainer className="bg-accent/3">
       <SectionTitle title="Our Services" />
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6">
+      <div className="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-6 lg:gap-8 lg:self-center">
         <ServiceCard title="Residential Cleaning" icon={faHouseChimney} />
         <ServiceCard title="Office Cleaning" icon={faBuilding} />
         <ServiceCard title="Deep Cleaning" icon={faPumpMedical} />
