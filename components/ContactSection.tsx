@@ -71,7 +71,7 @@ function ContactSection() {
           alt="D'Belkis Cleaning Company"
           width={720}
           height={720}
-          className="h-full w-full rounded-xl object-cover"
+          className="h-full max-h-120 w-full rounded-xl object-cover"
         />
       </div>
     </SectionContainer>
