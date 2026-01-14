@@ -33,13 +33,15 @@ function HeroSection() {
         <div className="flex flex-col gap-3 md:mt-4 md:px-24 lg:p-0">
           <div className="flex flex-col gap-1.5 md:flex-row md:gap-4">
             <Link
-              href="/"
+              target="_blank"
+              rel="noreferrer"
+              href="https://wa.me/971527280736?text=Hi. I need a quote for your cleaning services"
               className="rounded-full bg-primary px-6 py-3 text-center text-sm font-medium text-primary-contrast md:flex-auto md:text-[15px] lg:flex-none lg:text-lg"
             >
               Get a Free Quote
             </Link>
             <Link
-              href="/"
+              href="https://wa.me/971527280736?text=Hi. I want to book a cleaning service"
               className="rounded-full border border-primary px-6 py-3 text-center text-sm font-medium text-primary md:flex-auto md:text-[15px] lg:flex-none lg:text-lg"
             >
               Book a Cleaning

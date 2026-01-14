@@ -3,17 +3,24 @@ import SectionContainer from "@/components/SectionContainer";
 import SectionTitle from "@/components/SectionTitle";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareWhatsapp } from "@fortawesome/free-brands-svg-icons/faSquareWhatsapp";
-import { faSquareInstagram } from "@fortawesome/free-brands-svg-icons/faSquareInstagram";
+import {
+  faSquareWhatsapp
+} from "@fortawesome/free-brands-svg-icons/faSquareWhatsapp";
+import {
+  faSquareInstagram
+} from "@fortawesome/free-brands-svg-icons/faSquareInstagram";
 import Link from "next/dist/client/link";
-import { faSquareFacebook } from "@fortawesome/free-brands-svg-icons/faSquareFacebook";
+import {
+  faSquareFacebook
+} from "@fortawesome/free-brands-svg-icons/faSquareFacebook";
+import { sendEmail } from "@/actions/sendMail";
 
 function ContactSection() {
   return (
     <SectionContainer>
       <SectionTitle title="Contact Us" />
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-        <form className="w-full">
+        <form action={sendEmail} className="w-full">
           <div className="flex flex-col gap-3">
             <div className="flex items-center justify-center gap-6 md:pb-3 lg:pb-6">
               <Link href="https://www.whatsapp.com">
