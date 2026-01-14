@@ -1,7 +1,5 @@
 import React from "react";
-import {
-  faHouseChimney
-} from "@fortawesome/free-solid-svg-icons/faHouseChimney";
+import { faHouseChimney } from "@fortawesome/free-solid-svg-icons/faHouseChimney";
 import { faBuilding } from "@fortawesome/free-solid-svg-icons/faBuilding";
 import { faPumpMedical } from "@fortawesome/free-solid-svg-icons/faPumpMedical";
 import { faDoorOpen } from "@fortawesome/free-solid-svg-icons/faDoorOpen";
