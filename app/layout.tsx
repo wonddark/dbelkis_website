@@ -81,7 +81,7 @@ export default function RootLayout({
       >
         {children}
         <Link
-          href="https://wa.me/971527280736?text=Hi. I need a quote for your cleaning services"
+          href="https://wa.me/971527280736?text=Hi"
           className="fixed right-5 bottom-5 z-10 lg:right-10 lg:bottom-10"
         >
           <FontAwesomeIcon
