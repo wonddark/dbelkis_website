@@ -35,13 +35,13 @@ function HeroSection() {
             <Link
               target="_blank"
               rel="noreferrer"
-              href="https://wa.me/971527280736?text=Hi. I need a quote for your cleaning services"
+              href={`${process.env.WS_QUOTE_LINK}`}
               className="rounded-full bg-primary px-6 py-3 text-center text-sm font-medium text-primary-contrast md:flex-auto md:text-[15px] lg:flex-none lg:text-lg"
             >
               Get a Free Quote
             </Link>
             <Link
-              href="https://wa.me/971527280736?text=Hi. I want to book a cleaning service"
+              href={`${process.env.CALENDLY_LINK}`}
               className="rounded-full border border-primary px-6 py-3 text-center text-sm font-medium text-primary md:flex-auto md:text-[15px] lg:flex-none lg:text-lg"
             >
               Book a Cleaning

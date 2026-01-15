@@ -81,7 +81,7 @@ export default function RootLayout({
       >
         {children}
         <Link
-          href="https://wa.me/971527280736?text=Hi"
+          href={`${process.env.WS_HI_LINK}`}
           className="fixed right-5 bottom-5 z-10 lg:right-10 lg:bottom-10"
         >
           <FontAwesomeIcon
