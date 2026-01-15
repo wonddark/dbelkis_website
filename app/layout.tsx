@@ -2,9 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter, Sansation } from "next/font/google";
 import "./globals.css";
 import Link from "next/dist/client/link";
-import {
-  faSquareWhatsapp
-} from "@fortawesome/free-brands-svg-icons/faSquareWhatsapp";
+import { faSquareWhatsapp } from "@fortawesome/free-brands-svg-icons/faSquareWhatsapp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const inter = Inter({
@@ -24,6 +22,14 @@ export const metadata: Metadata = {
   description:
     "D'Belkis Cleaning Services is a professional cleaning company located in the heart of Dubai.",
   metadataBase: process.env.SITE_URL,
+  icons: {
+    icon: [
+      {
+        rel: "icon",
+        url: "/logo.jpeg",
+      },
+    ],
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
