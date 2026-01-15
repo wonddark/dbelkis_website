@@ -1,6 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Sansation } from "next/font/google";
 import "./globals.css";
+import Link from "next/dist/client/link";
+import {
+  faSquareWhatsapp
+} from "@fortawesome/free-brands-svg-icons/faSquareWhatsapp";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -72,9 +77,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${sansation.variable} bg-background font-body text-body antialiased`}
+        className={`${inter.variable} ${sansation.variable} relative bg-background font-body text-body antialiased`}
       >
         {children}
+        <Link
+          href="https://wa.me/971527280736?text=Hi. I need a quote for your cleaning services"
+          className="fixed right-5 bottom-5 z-10 lg:right-10 lg:bottom-10"
+        >
+          <FontAwesomeIcon
+            icon={faSquareWhatsapp}
+            className="size-10 text-accent transition-colors duration-300 ease-in-out hover:text-accent/80 md:size-10 lg:size-16"
+          />
+        </Link>
       </body>
     </html>
   );
