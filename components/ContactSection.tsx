@@ -3,10 +3,16 @@ import SectionContainer from "@/components/SectionContainer";
 import SectionTitle from "@/components/SectionTitle";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareWhatsapp } from "@fortawesome/free-brands-svg-icons/faSquareWhatsapp";
-import { faSquareInstagram } from "@fortawesome/free-brands-svg-icons/faSquareInstagram";
+import {
+  faSquareWhatsapp
+} from "@fortawesome/free-brands-svg-icons/faSquareWhatsapp";
+import {
+  faSquareInstagram
+} from "@fortawesome/free-brands-svg-icons/faSquareInstagram";
 import Link from "next/dist/client/link";
-import { faSquareFacebook } from "@fortawesome/free-brands-svg-icons/faSquareFacebook";
+import {
+  faSquareFacebook
+} from "@fortawesome/free-brands-svg-icons/faSquareFacebook";
 import { sendEmail } from "@/actions/sendMail";
 
 function ContactSection() {
@@ -55,7 +61,7 @@ function ContactSection() {
             />
             <button
               type="submit"
-              className="rounded-full bg-primary px-6 py-3 text-[13px] font-medium text-primary-contrast lg:self-start lg:text-[15px]"
+              className="rounded-full bg-primary px-6 py-3 text-[13px] font-medium text-primary-contrast transition-colors duration-200 ease-in-out hover:bg-primary/85 hover:text-primary-contrast/90 lg:self-start lg:text-[15px]"
             >
               Send message
             </button>
