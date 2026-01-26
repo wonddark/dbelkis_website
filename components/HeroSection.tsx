@@ -35,16 +35,16 @@ function HeroSection() {
             <Link
               target="_blank"
               rel="noreferrer"
-              href={`${process.env.WS_QUOTE_LINK}`}
+              href={`${process.env.CALENDLY_LINK}`}
               className="rounded-full bg-primary px-6 py-3 text-center text-sm font-medium text-primary-contrast transition-colors duration-200 ease-in-out hover:bg-primary/85 hover:text-primary-contrast/90 md:flex-auto md:text-[15px] lg:flex-none lg:text-lg"
             >
-              Get a Free Quote
+              Book a Cleaning
             </Link>
             <Link
-              href={`${process.env.CALENDLY_LINK}`}
+              href={`${process.env.WS_QUOTE_LINK}`}
               className="rounded-full border border-primary px-6 py-3 text-center text-sm font-medium text-primary transition-colors duration-200 ease-in-out hover:bg-primary hover:text-primary-contrast md:flex-auto md:text-[15px] lg:flex-none lg:text-lg"
             >
-              Book a Cleaning
+              Get a Free Quote
             </Link>
           </div>
           <div className="flex flex-wrap justify-center gap-x-3 gap-y-1 md:gap-3 lg:justify-start">
