@@ -3,16 +3,10 @@ import SectionContainer from "@/components/SectionContainer";
 import SectionTitle from "@/components/SectionTitle";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faSquareWhatsapp
-} from "@fortawesome/free-brands-svg-icons/faSquareWhatsapp";
-import {
-  faSquareInstagram
-} from "@fortawesome/free-brands-svg-icons/faSquareInstagram";
+import { faSquareWhatsapp } from "@fortawesome/free-brands-svg-icons/faSquareWhatsapp";
+import { faSquareInstagram } from "@fortawesome/free-brands-svg-icons/faSquareInstagram";
 import Link from "next/dist/client/link";
-import {
-  faSquareFacebook
-} from "@fortawesome/free-brands-svg-icons/faSquareFacebook";
+import { faSquareFacebook } from "@fortawesome/free-brands-svg-icons/faSquareFacebook";
 import { sendEmail } from "@/actions/sendMail";
 
 function ContactSection() {
